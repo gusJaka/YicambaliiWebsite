@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    widht: 1390px;
+    height: 1140px;
+    background-color: #603601;
+    font-family: "Montserrat";
+}
+
+.titleFont{
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.textTitleFont{
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+.textFont{
+    font-size: 12px;
+    color: white;
+    text-align: justify;
+}
+
+.circle{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background: #CC9544;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-inline-start: 140px;
+    margin-inline-end: 1220px;
+}
+
+.numberFont{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-indent: 10px;
+
+}
+
