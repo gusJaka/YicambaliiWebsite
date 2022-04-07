@@ -2,4 +2,18 @@
     background-color: #603601;
 }
 
+.centered {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.font-primary {
+    font-family: "Montserrat ExtraBold";
+}
+
+.font100 {
+    font-size: 100px;
+}
 
