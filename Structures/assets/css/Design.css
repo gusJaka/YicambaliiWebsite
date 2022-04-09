@@ -9,11 +9,22 @@
     transform: translate(-50%, -50%);
 }
 
+.centered-1 {
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .font-primary {
     font-family: "Montserrat ExtraBold";
 }
 
 .font100 {
     font-size: 100px;
+}
+
+.font-white {
+    color: white;
 }
 
