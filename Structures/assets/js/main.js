@@ -8,4 +8,6 @@ const navList = document.getElementById('nav-list');
 
 navbarToggle.addEventListener('click', () =>{
     navList.classList.toggle('nav-active');
+
 })
+
