@@ -161,7 +161,7 @@ nav.navbar ul.nav-list li.icon-mobile{
         transition: 0.3s ease-in-out;
     }
 
-    .navbar a {
+    .navbar li a {
         display: block;
         padding: 15px;
     }
