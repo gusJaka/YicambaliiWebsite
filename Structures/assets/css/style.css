@@ -24,6 +24,10 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px 10px 10px 10px;
 }
 
 .navbar-logo-img {
@@ -48,7 +52,7 @@ img {
     text-decoration: none;
 }
 
-.navbar a:hover, a.active {
+.navbar li a:hover, a.active {
     background-color: #603601;
     padding: 10px;
     border-radius: 5px;
@@ -202,7 +206,6 @@ nav.navbar ul.nav-list li.icon-mobile{
 }
 
 .rounded-num {
-    padding: 3px;
     border-radius: 50%;
     background-color: #CC9544;
     color: #000;
