@@ -27,13 +27,13 @@ img {
     position: fixed;
     width: 100%;
     top: 0;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
 }
 
 .navbar-logo-img {
     margin-left: 200%;
     height: auto;
-    width: 48px;
+    width: 55px;
 }
 
 .nav-list {
@@ -43,13 +43,14 @@ img {
 
 .nav-list .nav-item {
     display: inline-block;
-    padding: 20px 10px;
+    padding: 0 20px 0 10px;
 }
 
 .navbar a {
     transition: 0.3s ease-in-out;
     letter-spacing: 1px;
     text-decoration: none;
+    display: block;
 }
 
 .navbar li a:hover, a.active {
@@ -140,6 +141,7 @@ nav.navbar ul.nav-list li.icon-mobile{
 @media screen and (max-width: 750px){
     .navbar {
         flex-direction: column;
+        padding: 0;
     }
 
     .navbar-logo {
@@ -159,11 +161,23 @@ nav.navbar ul.nav-list li.icon-mobile{
         transition: 0.3s ease-in-out;
     }
 
-    .nav-list .nav-item {
+    .navbar a {
         display: block;
         padding: 15px;
+    }
+
+    .nav-list .nav-item {
+        display: block;
+        padding: 0;
         border-top: 1px solid #fff;
         text-align: center;
+    }
+
+    .navbar li a:hover, a.active {
+        background-color: #603601;
+        display: block;
+        padding: 15px;
+        border-radius: 0;
     }
 
     .bar-menu {
@@ -184,7 +198,7 @@ nav.navbar ul.nav-list li.icon-mobile{
 ----------------------------------------------*/
 
 .menu-container {
-    margin-top: 70px;
+    margin: 100px 0 0 0;
     padding: 20px;
 }
 
@@ -244,6 +258,10 @@ nav.navbar ul.nav-list li.icon-mobile{
     }
     .menu-body, .content {
         padding-bottom: 30px;
+    }
+
+    .menu-header {
+        padding: 0 0 20px 0 ;
     }
 }
 
