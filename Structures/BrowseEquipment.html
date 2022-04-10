@@ -2,61 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#603601">
+    <meta name="description" content="Browse Photography and Videography equipment">
+    <title>Browse Equipment | #AbadikanMomentMu</title>
+    <!-- Icon -->
+    <link rel="icon" type="image/png" href="assets/img/yicam_logo_png_mini.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/yicam_logo_png_mini.png">
+    <!-- CSS link -->
+    <link rel="stylesheet" type="text/css" href="assets/css/browse.css">
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
-    <title>Yicambalii</title>
-
 </head>
 <body>
-    <header class="header" id="header">
-        <nav class="nav">
-            <a href="" class="nav__logo">Yicambalii</a>
-            <div id="nav-menu" class="nav__menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="browse" class="nav__link">Browse</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#info" class="nav__link">Info</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#tips" class="nav__link">Tips & Tricks</a>
-                    </li>
-                </ul>
-            </div>
-            <div id="nav-toggle" class="nav__toggle">
-                <i class="bx bx-menu"></i>
-            </div>
-        </nav>
-    </header>
-    <main class="main">
-        <section id="home" class="hero">
-            <div class="hero__container">
-                <div class="hero__data">
-                    <h1 class="hero__title">
-                        Browse All Equipment
-                    </h1>
-                    <a href="" class="button">Search</a>
+<!-- Header -->
+<nav class="navbar">
+    <div class="navbar-logo">
+        <a href="#">
+            <img class="navbar-logo-img" src="assets/img/yicam_logo_png.png" alt="yicambalii-logo">
+        </a>
+    </div>
+    <ul id="nav-list" class="nav-list">
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#">Browse</a></li>
+        <li class="nav-item"><a href="#">Info</a></li>
+        <li class="nav-item"><a href="#">Tips and Trick</a></li>
+    </ul>
+    <div id="navbar-toggle" class="bar-menu">
+        <div class="bar-line"></div>
+        <div class="bar-line"></div>
+        <div class="bar-line"></div>
+    </div>
+</nav>
 
-                    <img src="" class="hero__img" alt="hero">
-                </div>
+<!-- Content -->
+<div class="menu-container">
+    <div class="header-color padding-bottom-top">
+        <h1 class="padding-left">Browse All Equipment</h1>
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="bx bxl-search-alt-2"></i></button>
+                </form>
             </div>
-        </section>
-
-        <section class="section">
-            <div class="container">
-                <h2 class="section__title">Equipments</h2>
-                <div class="grid">
-                    <article class="grid__card">
-                        <img src="" alt="" class="grid__image">
-                        <div class=""></div>
-                    </article>
-                </div>
+        </div>
+    </div>
+    <div class="menu-header">
+        <h1><strong>Tips and Trick about Camera</strong></h1>
+    </div>
+    <div class="menu-body">
+        <div class="content">
+            <div class="title-content">
+                <div class="rounded-num">1</div>
+                <div class="title-text">Get a Good Camera Bag</div>
             </div>
-        </section>
-    </main>
+            <div class="body-content">
+                <div class="image-center">
+                    <img class="content-img" src="assets/img/undraw_Profile_data_re_v81r.png" alt="camera-bag-image">
+                </div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida mollis consectetur.
+                Vivamus et lorem sagittis, molestie eros in, sollicitudin dui. Maecenas nulla nunc,
+                volutpat ut velit sit amet, malesuada mattis ante. Maecenas vestibulum tincidunt leo sit amet accumsan.
+                Sed nec consectetur mauris, ac lobortis est. Maecenas id felis dignissim, maximus quam ut, efficitur ante.
+                Aenean consequat urna diam, at molestie nulla pretium sed. Proin id diam id ipsum molestie dignissim.
+                Donec sed vestibulum tortor. Duis nec pretium massa. Curabitur fringilla lacinia ante vitae gravida.
+                Nullam pulvinar mollis diam, eu convallis velit molestie auctor.
+            </div>
+        </div>
+        <div class="content">
+            <div class="title-content">
+                <div class="rounded-num">2</div>
+                <div class="title-text">Take the Batteries Out</div>
+            </div>
+            <div class="body-content">
+                <div class="image-center">
+                    <img class="content-img" src="assets/img/undraw_Profile_data_re_v81r.png" alt="camera-bag-image">
+                </div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget tincidunt diam.
+                Phasellus vel venenatis enim. Morbi malesuada felis ac pretium mollis. Vivamus vitae quam eleifend,
+                porttitor purus non, ornare urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere cubilia curae; Morbi porta metus quis purus volutpat, sed aliquam nunc pharetra. Nam tempus
+                orci massa. Sed pretium purus eu purus fermentum luctus.
+            </div>
+        </div>
+    </div>
+</div>
+<!-- JS Script -->
+<script src="assets/js/main.js"></script>
 </body>
 </html>
