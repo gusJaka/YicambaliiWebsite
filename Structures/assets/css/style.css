@@ -63,7 +63,7 @@ img {
     display: none;
 }
 
-.bar-line {
+.bar-line1, .bar-line2, .bar-line3 {
     width: 22px;
     height: 4px;
     background: #fff;
@@ -186,6 +186,20 @@ nav.navbar ul.nav-list li.icon-mobile{
         right: 18px;
         top: 18px;
         cursor: pointer;
+    }
+
+    .change .bar-line1{
+        -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .change .bar-line2{
+        opacity: 0;
+    }
+
+    .change .bar-line3{
+        -webkit-transform: rotate(45deg) translate(-5px, -6px);
+        transform: rotate(45deg) translate(-6px, -6px);
     }
 
     .nav-active {
