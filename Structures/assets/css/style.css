@@ -218,7 +218,10 @@ nav.navbar ul.nav-list li.icon-mobile{
     flex-direction: row;
     font-weight: 700;
 }
-
+.listStyle{
+    padding-left: 92px;
+    padding-top: 10px;
+}
 .justify{
     text-align: justify;
 }
