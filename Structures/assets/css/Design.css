@@ -4,26 +4,22 @@ header {
     background-image: linear-gradient(#603601, #603601);
 }
 
-.bg-primary {
-    background-color: #603601;
-}
-
 .centered {
     position: absolute;
-    top: 0;
+    top: 15%;
     width: 100%;
-    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .centered-1 {
     position: absolute;
-    top: 23%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 25.9%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .font-primary {
@@ -31,7 +27,11 @@ header {
 }
 
 .font100 {
-    font-size: 800%;
+    font-size: 100px;
+}
+
+.font25 {
+    font-size: 25px;
 }
 
 .font-white {
