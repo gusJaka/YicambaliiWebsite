@@ -30,7 +30,7 @@ a {
     position: fixed;
     width: 100%;
     top: 0;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
 }
 
 .navbar-home {
@@ -46,7 +46,7 @@ a {
 .navbar-logo-img {
     margin-left: 200%;
     height: auto;
-    width: 48px;
+    width: 55px;
 }
 
 .nav-list {
@@ -56,13 +56,14 @@ a {
 
 .nav-list .nav-item {
     display: inline-block;
-    padding: 20px 10px;
+    padding: 0 20px 0 10px;
 }
 
 .navbar a, .navbar-home a {
     transition: 0.3s ease-in-out;
     letter-spacing: 1px;
     text-decoration: none;
+    display: block;
 }
 
 .navbar li a:hover, .navbar-home li a:hover, a.active {
@@ -75,7 +76,7 @@ a {
     display: none;
 }
 
-.bar-line {
+.bar-line1, .bar-line2, .bar-line3 {
     width: 22px;
     height: 4px;
     background: #fff;
@@ -153,6 +154,7 @@ nav.navbar ul.nav-list li.icon-mobile{
 @media screen and (max-width: 750px){
     .navbar, .navbar-home {
         flex-direction: column;
+        padding: 0;
     }
 
     .navbar-logo {
@@ -172,11 +174,23 @@ nav.navbar ul.nav-list li.icon-mobile{
         transition: 0.3s ease-in-out;
     }
 
-    .nav-list .nav-item {
+    .navbar li a {
         display: block;
         padding: 15px;
+    }
+
+    .nav-list .nav-item {
+        display: block;
+        padding: 0;
         border-top: 1px solid #fff;
         text-align: center;
+    }
+
+    .navbar li a:hover, a.active {
+        background-color: #603601;
+        display: block;
+        padding: 15px;
+        border-radius: 0;
     }
 
     .bar-menu {
@@ -185,6 +199,20 @@ nav.navbar ul.nav-list li.icon-mobile{
         right: 18px;
         top: 18px;
         cursor: pointer;
+    }
+
+    .change .bar-line1{
+        -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .change .bar-line2{
+        opacity: 0;
+    }
+
+    .change .bar-line3{
+        -webkit-transform: rotate(45deg) translate(-5px, -6px);
+        transform: rotate(45deg) translate(-6px, -6px);
     }
 
     .nav-active {
@@ -197,7 +225,7 @@ nav.navbar ul.nav-list li.icon-mobile{
 ----------------------------------------------*/
 
 .menu-container {
-    margin-top: 70px;
+    margin: 100px 0 0 0;
     padding: 20px;
 }
 
@@ -257,6 +285,10 @@ nav.navbar ul.nav-list li.icon-mobile{
     }
     .menu-body, .content {
         padding-bottom: 30px;
+    }
+
+    .menu-header {
+        padding: 0 0 20px 0 ;
     }
 }
 
