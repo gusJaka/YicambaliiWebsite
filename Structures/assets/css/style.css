@@ -197,6 +197,17 @@ ul {
 .justify{
     text-align: justify;
 }
+.styleUL{
+    padding-left: 20px;
+    list-style-type: square;
+}
+.listSpacePara{
+    padding-left: 70px;
+    padding-top: 10px;
+}
+.listSpace{
+    padding-top: 10px;
+}
 .rounded-num {
     border-radius: 50%;
     background-color: #CC9544;
