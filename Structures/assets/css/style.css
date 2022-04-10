@@ -219,6 +219,9 @@ nav.navbar ul.nav-list li.icon-mobile{
     font-weight: 700;
 }
 
+.justify{
+    text-align: justify;
+}
 .rounded-num {
     border-radius: 50%;
     background-color: #CC9544;
