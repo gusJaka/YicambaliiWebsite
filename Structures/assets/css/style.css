@@ -21,8 +21,11 @@ img {
     height: auto;
 }
 
+
 ul {
     list-style-type: none;
+
+
 }
 
 /*----------------------------------------------
@@ -37,6 +40,16 @@ ul {
     width: 100%;
     top: 0;
     padding: 10px;
+}
+
+.navbar-home {
+    background-color: #CC9544;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    padding: 10px 10px 10px 10px;
 }
 
 .navbar-logo-img {
@@ -55,14 +68,14 @@ ul {
     padding: 0 20px 0 10px;
 }
 
-.navbar a {
+.navbar a, .navbar-home a {
     transition: 0.3s ease-in-out;
     letter-spacing: 1px;
     text-decoration: none;
     display: block;
 }
 
-.navbar li a:hover, a.active {
+.navbar li a:hover, .navbar-home li a:hover, a.active {
     background-color: #603601;
     padding: 10px;
     border-radius: 5px;
@@ -84,7 +97,7 @@ ul {
 /* On Mobile Styling */
 
 @media screen and (max-width: 750px){
-    .navbar {
+    .navbar, .navbar-home {
         flex-direction: column;
         padding: 0;
     }
@@ -177,7 +190,13 @@ ul {
     flex-direction: row;
     font-weight: 700;
 }
-
+.listStyle{
+    padding-left: 92px;
+    padding-top: 10px;
+}
+.justify{
+    text-align: justify;
+}
 .rounded-num {
     border-radius: 50%;
     background-color: #CC9544;
