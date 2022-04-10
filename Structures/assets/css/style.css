@@ -16,6 +16,10 @@ img {
     height: auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*----------------------------------------------
 #header styling
 ----------------------------------------------*/
@@ -28,6 +32,16 @@ img {
     width: 100%;
     top: 0;
     padding: 10px;
+}
+
+.navbar-home {
+    background-color: #CC9544;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    padding: 10px 10px 10px 10px;
 }
 
 .navbar-logo-img {
@@ -46,14 +60,14 @@ img {
     padding: 0 20px 0 10px;
 }
 
-.navbar a {
+.navbar a, .navbar-home a {
     transition: 0.3s ease-in-out;
     letter-spacing: 1px;
     text-decoration: none;
     display: block;
 }
 
-.navbar li a:hover, a.active {
+.navbar li a:hover, .navbar-home li a:hover, a.active {
     background-color: #603601;
     padding: 10px;
     border-radius: 5px;
@@ -139,7 +153,7 @@ nav.navbar ul.nav-list li.icon-mobile{
 /* On Mobile Styling */
 
 @media screen and (max-width: 750px){
-    .navbar {
+    .navbar, .navbar-home {
         flex-direction: column;
         padding: 0;
     }
