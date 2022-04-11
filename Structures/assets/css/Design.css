@@ -4,9 +4,14 @@ header {
     background-image: linear-gradient(#603601, #603601);
 }
 
+.container-nav {
+    background-color: #CC9544;
+    height: 150px;
+    width: 100%;
+}
+
 .centered {
     position: absolute;
-    top: 15%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -67,4 +72,31 @@ header {
 
 .center {
     text-align: center;
+}
+
+.center-btn {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    padding: 15px 30px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+    border-radius: 40px;
+}
+
+.button-container-div {
+    display: grid;
+}
+
+.order {
+    background-color: #cc9544;
+    font-size: 15px;
+}
+
+.order:hover {
+    background-color: #dcbe92;
 }

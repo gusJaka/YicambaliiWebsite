@@ -39,6 +39,16 @@ ul {
     padding: 10px;
 }
 
+.navbar-home {
+    background-color: #CC9544;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    padding: 10px;
+}
+
 .navbar-logo-img {
     margin-left: 200%;
     height: auto;
