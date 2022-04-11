@@ -1,3 +1,6 @@
+/*----------------------------------------------
+                #General styling
+----------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 * {
@@ -24,12 +27,68 @@ img {
 
 ul {
     list-style-type: none;
+}
 
+label {
+    display: inline-block;
+    margin-bottom: 0.35rem;
+}
 
+input, textarea{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid #CC9544;
+    border-radius: 0.25rem;
+    transition: border-color .3s ease-in-out, box-shadow .3s ease-in-out;
+    resize: vertical;
+}
+
+button {
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #CC9544;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    background-color: transparent;
+    border: 2px solid #CC9544;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-appearance: button;
+    -moz-user-select: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+button:hover {
+    background-color: #CC9544;
+    color: #fff;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px #CC9544;
+}
+
+#name-input {
+    text-transform: capitalize;
+}
+
+.form-group {
+    margin-bottom: 1rem;
 }
 
 /*----------------------------------------------
-#header styling
+                #header styling
 ----------------------------------------------*/
 .navbar {
     background-color: #CC9544;
@@ -68,7 +127,7 @@ ul {
     padding: 0 20px 0 10px;
 }
 
-.navbar a, .navbar-home a {
+.navbar li a, .navbar-home a {
     transition: 0.3s ease-in-out;
     letter-spacing: 1px;
     display: block;
@@ -165,10 +224,12 @@ ul {
 }
 
 /*----------------------------------------------
-#menu styling
+                #menu styling
 ----------------------------------------------*/
 
-.menu-container {
+/* tips and trick css */
+
+.menu-container .menu-body, .menu-container .menu-header{
     margin: 100px 0 0 0;
     padding: 20px;
 }
@@ -176,7 +237,7 @@ ul {
 .menu-header {
     text-align: center;
     letter-spacing: 1px;
-    font-size: 35px;
+    font-size: 5vw;
 }
 
 .menu-body, .content {
@@ -227,6 +288,32 @@ ul {
     text-align: center;
 }
 
+/* Suggestion css */
+
+.image-suggestion {
+    /*padding: 20px 0 10px 0;*/
+    background-size: cover;
+    /*padding: unset;*/
+}
+
+.left-group {
+    width: 50%;
+    padding: 0 5vw 10px 0;
+}
+
+.right-group {
+    width: 50%;
+}
+
+.form-group textarea {
+    height: 201px;
+}
+
+.row button {
+    float: right;
+
+}
+
 /* On Mobile Styling */
 
 @media screen and (max-width: 900px){
@@ -243,12 +330,13 @@ ul {
 }
 
 /*----------------------------------------------
-#Footer styling
+                #Footer styling
 ----------------------------------------------*/
 .footer-wave {
-    position: relative;
+    /*position: relative;*/
     width: 100%;
-    bottom: -6px;
+    margin-bottom: -6px;
+    /*bottom: -6px;*/
 }
 
 .footer {
@@ -272,19 +360,16 @@ ul {
 
 .footer-col h4 {
     font-size: 20px;
-    margin-bottom: 35px;
-    position: relative;
+    margin-bottom: 20px;
 }
-
-.footer-col h4::before {
+.footer-col h4::after {
     content: '';
-    position: absolute;
+    display: block;
     left: 0;
-    bottom: -10px;
     background-color: #361500;
     height: 2px;
     width: 50px;
-    box-sizing: border-box;
+    margin: 8px 0 0 0;
 }
 
 .footer-col ul li {
@@ -306,7 +391,7 @@ ul {
 }
 
 .bottom-footer {
-    padding: 0 50px 0 0;
+    padding: 30px 30px 0 0;
 }
 
 .whatsapp-color {
@@ -330,7 +415,7 @@ ul {
 }
 
 .footer-col .copyright-footer {
-    padding-top: 50px;
+    padding-top: 40px;
     font-size: 15px;
 }
 
@@ -346,9 +431,12 @@ ul {
         width: 50%;
         margin-bottom: 30px;
     }
-    .footer-col h4 {
-        margin-bottom: 22px;
+
+    .footer-col:last-child {
+        width: 100%;
+        margin-bottom: 0;
     }
+
     .footer-col ul li {
         margin-bottom: 2px;
     }
