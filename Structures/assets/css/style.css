@@ -94,7 +94,7 @@ ul {
 /* On Mobile Styling */
 
 @media screen and (max-width: 750px){
-    .navbar {
+    .navbar, .navbar-home {
         flex-direction: column;
         padding: 0;
     }
@@ -116,7 +116,7 @@ ul {
         transition: 0.3s ease-in-out;
     }
 
-    .navbar li a {
+    .navbar li a, .navbar-home li a {
         display: block;
         padding: 15px;
     }
@@ -128,7 +128,7 @@ ul {
         text-align: center;
     }
 
-    .navbar li a:hover, a.active {
+    .navbar li a:hover, a.active , .navbar-home li a:hover{
         background-color: #603601;
         display: block;
         padding: 15px;
