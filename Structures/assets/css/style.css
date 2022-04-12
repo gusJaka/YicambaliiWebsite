@@ -69,6 +69,7 @@ button {
     -moz-user-select: none;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+
 button:hover {
     background-color: #CC9544;
     color: #fff;
@@ -230,14 +231,17 @@ input:focus, textarea:focus {
 /* tips and trick css */
 
 .menu-container .menu-body, .menu-container .menu-header{
-    margin: 100px 0 0 0;
-    padding: 20px;
+    padding: 20px 20px 2vw 20px;
 }
 
 .menu-header {
+    margin: 90px 0 2vw 0;
     text-align: center;
     letter-spacing: 1px;
-    font-size: 5vw;
+}
+
+.menu-header h1{
+    font-size : clamp(2rem, 10vw, 4.75rem);
 }
 
 .menu-body, .content {
@@ -250,13 +254,16 @@ input:focus, textarea:focus {
     flex-direction: row;
     font-weight: 700;
 }
+
 .listStyle{
     padding-left: 92px;
     padding-top: 10px;
 }
+
 .justify{
     text-align: justify;
 }
+
 .rounded-num {
     border-radius: 50%;
     background-color: #CC9544;
@@ -271,7 +278,7 @@ input:focus, textarea:focus {
 
 .title-text {
     padding: 8px;
-    font-size: 30px;
+    font-size: calc(0.75em + 1vw);
 }
 
 .body-content {
@@ -291,9 +298,8 @@ input:focus, textarea:focus {
 /* Suggestion css */
 
 .image-suggestion {
-    /*padding: 20px 0 10px 0;*/
     background-size: cover;
-    /*padding: unset;*/
+    padding-top: 1.5%;
 }
 
 .left-group {
@@ -320,12 +326,20 @@ input:focus, textarea:focus {
     .content-img {
         width: 100%;
     }
+
     .menu-body, .content {
         padding-bottom: 30px;
     }
+}
 
+@media screen and (max-width: 750px){
     .menu-header {
-        padding: 0 0 20px 0 ;
+        margin: 60px 0 1.5vw 0;
+    }
+
+    .left-group, .right-group {
+        width: 100%;
+        padding: unset;
     }
 }
 
