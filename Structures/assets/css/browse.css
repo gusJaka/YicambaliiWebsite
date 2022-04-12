@@ -248,3 +248,122 @@ input[type=text] {
     padding: 12px 20px 12px 40px;
     color: black;
 }
+
+/*----------------------------------------------
+                #Footer styling
+----------------------------------------------*/
+.footer-wave {
+    /*position: relative;*/
+    width: 100%;
+    margin-bottom: -6px;
+    /*bottom: -6px;*/
+}
+
+.footer {
+    background-color: #CC9544;
+    padding: 5px 0 50px 0;
+}
+
+.menu-footer {
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 50px;
+}
+
+.footer-col h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.footer-col h4::after {
+    content: '';
+    display: block;
+    left: 0;
+    background-color: #361500;
+    height: 2px;
+    width: 50px;
+    margin: 8px 0 0 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    color: #f0e5d6;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+    font-weight: 800;
+    padding-left: 10px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.bottom-footer {
+    padding: 30px 30px 0 0;
+}
+
+.whatsapp-color {
+    color: #25D366;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.contact-title {
+    padding-bottom: 5px;
+}
+
+.footer-col a h2 {
+    font-weight: 400;
+}
+
+.footer-col a h2 i {
+    font-size: 40px;
+}
+
+.footer-col .copyright-footer {
+    padding-top: 40px;
+    font-size: 15px;
+}
+
+/* On Mobile Styling */
+
+@media screen and (max-width: 900px){
+    .footer {
+        background-color: #CC9544;
+        padding: 5px 0 20px 0;
+    }
+
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .footer-col:last-child {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .footer-col ul li {
+        margin-bottom: 2px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .footer-col {
+        width: 100%;
+    }
+}
