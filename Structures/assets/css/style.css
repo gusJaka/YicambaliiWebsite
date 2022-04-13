@@ -320,6 +320,37 @@ input:focus, textarea:focus {
 
 }
 
+/* Booking Guidance css */
+
+.content .right {
+    justify-content: right;
+    direction: rtl;
+}
+
+.image-md {
+    padding: 10px;
+    width: 50%;
+    height: auto;
+}
+
+.image-left {
+    float: left;
+}
+
+.image-right {
+    float: right;
+}
+
+.text-md {
+    width: 50%;
+    height: auto;
+    align-self: center;
+}
+
+.mb-5 {
+    margin-bottom: 5%;
+}
+
 /* On Mobile Styling */
 
 @media screen and (max-width: 900px){
@@ -330,11 +361,24 @@ input:focus, textarea:focus {
     .menu-body, .content {
         padding-bottom: 30px;
     }
+
+    .image-md, .text-md {
+        width: 100%;
+    }
+
+    .content .right {
+        justify-content: left;
+        direction: ltr;
+    }
 }
 
 @media screen and (max-width: 750px){
     .menu-header {
         margin: 60px 0 1.5vw 0;
+    }
+
+    .content-img {
+        width: 100%;
     }
 
     .left-group, .right-group {
@@ -365,6 +409,7 @@ input:focus, textarea:focus {
 .row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .footer-col {
