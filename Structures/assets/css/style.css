@@ -370,6 +370,10 @@ input:focus, textarea:focus {
         justify-content: left;
         direction: ltr;
     }
+
+    .image-right, .image-left {
+        float: none;
+    }
 }
 
 @media screen and (max-width: 750px){
