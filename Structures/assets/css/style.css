@@ -126,6 +126,34 @@ input:focus, textarea:focus {
 .nav-list .nav-item {
     display: inline-block;
     padding: 0 20px 0 10px;
+    overflow: hidden;
+}
+
+/* dropdown css */
+.dropdown-list {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: #f3f1ed;
+    border-radius: 5px;
+}
+
+.dropdown-list .dropdown-item a{
+    padding: 10px;
+    color: #CC9544;
+}
+
+.navbar li:hover .dropdown-list {
+    display: block;
+}
+
+.dropdown-list .dropdown-item a:hover, .dropdown-list .dropdown-item a.active{
+    color: #603601;
+    background-color: #d6a763;
+}
+
+.nav-list .nav-item i {
+    font-size: 10px;
 }
 
 .navbar li a, .navbar-home a {
@@ -134,7 +162,7 @@ input:focus, textarea:focus {
     display: block;
 }
 
-.navbar li a:hover, .navbar-home li a:hover, a.active {
+.navbar li a:hover, .navbar li a:focus, .navbar-home li a:hover, .navbar-home li a:focus, a.active {
     background-color: #603601;
     padding: 10px;
     border-radius: 5px;
@@ -190,11 +218,26 @@ input:focus, textarea:focus {
         text-align: center;
     }
 
-    .navbar li a:hover, a.active {
+    .navbar li a:hover, .navbar li a:focus, a.active {
         background-color: #603601;
         display: block;
         padding: 15px;
         border-radius: 0;
+    }
+
+    .dropdown-list {
+        position: relative;
+        background-color: #CC9544;
+    }
+
+    .dropdown-list .dropdown-item a{
+        padding: 15px;
+        color: #fff;
+    }
+
+    .dropdown-list .dropdown-item a:hover{
+        color: #fff;
+        background-color: #603601;
     }
 
     .bar-menu {
