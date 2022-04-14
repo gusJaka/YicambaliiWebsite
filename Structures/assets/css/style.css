@@ -273,12 +273,15 @@ input:focus, textarea:focus {
 
 /* tips and trick css */
 
-.menu-container .menu-body, .menu-container .menu-header{
+.menu-container .menu-header{
+    padding: 90px 20px 2vw 20px;
+}
+.menu-container .menu-body {
     padding: 20px 20px 2vw 20px;
 }
 
 .menu-header {
-    margin: 90px 0 2vw 0;
+    margin: 40px 0 2vw 0;
     text-align: center;
     letter-spacing: 1px;
 }
@@ -321,7 +324,7 @@ input:focus, textarea:focus {
 
 .title-text {
     padding: 8px;
-    font-size: calc(0.75em + 1vw);
+    font-size: calc(1.15em + 1vw);
 }
 
 .body-content {
@@ -394,7 +397,97 @@ input:focus, textarea:focus {
     margin-bottom: 5%;
 }
 
+/* Browse Services css */
+
+.background-secondary {
+    background-color: #CC9544;
+}
+
+.menu-header h2 {
+    text-align: left;
+    margin: 2rem 0 0 2rem;
+    font-size: clamp(1.5rem, 8vw, 3.05rem);
+}
+
+.input-group {
+    display: flex;
+    margin: 10px;
+}
+
+.input-date-left {
+    border-radius: 2rem 0 0 2rem;
+}
+
+.input-date-right {
+    border-radius: 0 2rem 2rem 0;
+}
+
+.search-group {
+    background-color: #fff;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.input-group i {
+    padding: 5px 15px 5px 15px;
+    border-radius: 20px;
+    background-color: #361500;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.input-group #search-input {
+    border: unset;
+    border-radius: 20px;
+}
+
+.input-group #search-input:focus {
+    outline: none;
+    box-shadow: unset;
+}
+
+.card {
+    width: 31%;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0.75rem;
+    box-shadow: 0 4px 8px 0 #361500;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 #361500;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-caption {
+    padding: 20px 15px 10px 20px;
+}
+
+.card-caption .label{
+    border-radius: 20px;
+    padding: 2px 10px 2px 10px;
+    margin-bottom: 10px;
+}
+
+.card-caption h2, .card-caption small, .card-caption small strong, .card-caption i{
+    color: #000;
+}
+
+.card-caption h2 {
+    padding-top: 15px;
+}
+
+.card-caption i {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
 /* On Mobile Styling */
+@media screen and (max-width: 1000px){
+    .card {
+        width: 45%;
+    }
+}
 
 @media screen and (max-width: 900px){
     .content-img {
@@ -421,7 +514,11 @@ input:focus, textarea:focus {
 
 @media screen and (max-width: 750px){
     .menu-header {
-        margin: 60px 0 1.5vw 0;
+        margin: 40px 0 1.5vw 0;
+    }
+
+    .menu-header h2 {
+        margin: 0 0 0 2rem;
     }
 
     .content-img {
@@ -456,7 +553,10 @@ input:focus, textarea:focus {
 .row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+}
+
+.row-centered {
+    justify-content: center;
 }
 
 .footer-col {
@@ -506,6 +606,10 @@ input:focus, textarea:focus {
 
 .text-right {
     text-align: right;
+}
+
+.text-left {
+    text-align: left;
 }
 
 .contact-title {
