@@ -307,6 +307,19 @@ li:hover .dropdown-list {
     font-weight: 700;
 }
 
+.listSpace{
+    padding: 10px;
+
+}
+
+.styleUL{
+    list-style-type: square;
+}
+
+.listSpacePara{
+    padding-left: 70px;
+}
+
 .listStyle{
     padding-left: 92px;
     padding-top: 10px;
