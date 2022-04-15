@@ -143,7 +143,7 @@ input:focus, textarea:focus {
     color: #CC9544;
 }
 
-.navbar li:hover .dropdown-list {
+li:hover .dropdown-list {
     display: block;
 }
 
@@ -206,7 +206,7 @@ input:focus, textarea:focus {
         transition: 0.3s ease-in-out;
     }
 
-    .navbar li a {
+    .navbar li a, .navbar-home li a {
         display: block;
         padding: 15px;
     }
@@ -218,7 +218,7 @@ input:focus, textarea:focus {
         text-align: center;
     }
 
-    .navbar li a:hover, .navbar li a:focus, a.active {
+    .navbar li a:hover, .navbar li a:focus, .navbar-home li a:hover, .navbar-home li a:focus, a.active {
         background-color: #603601;
         display: block;
         padding: 15px;
