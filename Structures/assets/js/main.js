@@ -19,3 +19,8 @@ function sendSuggestionMail() {
                             "%0D%0A%0D%0A" + "Best Regards,%0D%0A" + name + "%0D%0A%0D%0A";
     window.open('mailto:kadek0086@gmail.com?subject=Yicambalii Suggestion&body=' + text_suggestion);
 }
+
+function sendEmail()
+{
+    window.location = "mailto:kadek0086@gmail.com";
+}
