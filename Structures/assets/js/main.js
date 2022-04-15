@@ -11,3 +11,7 @@ navbarToggle.addEventListener('click', () =>{
     navbarToggle.classList.toggle("change");
 })
 
+function sendEmail()
+{
+    window.location = "mailto:kadek0086@gmail.com";
+}
