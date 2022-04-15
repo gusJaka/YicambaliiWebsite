@@ -273,7 +273,9 @@ input:focus, textarea:focus {
 
 /* tips and trick css */
 
-
+.color-chocolate{
+    color: #CC9544;
+}
 .menu-container .menu-header{
     padding: 90px 20px 2vw 20px;
 }
