@@ -273,15 +273,19 @@ input:focus, textarea:focus {
 
 /* tips and trick css */
 
+
 .menu-container .menu-header{
     padding: 90px 20px 2vw 20px;
 }
 .menu-container .menu-body {
+
     padding: 20px 20px 2vw 20px;
 }
 
 .menu-header {
+
     margin: 40px 0 2vw 0;
+
     text-align: center;
     letter-spacing: 1px;
 }
@@ -324,7 +328,9 @@ input:focus, textarea:focus {
 
 .title-text {
     padding: 8px;
+
     font-size: calc(1.15em + 1vw);
+
 }
 
 .body-content {
@@ -396,6 +402,7 @@ input:focus, textarea:focus {
 .mb-5 {
     margin-bottom: 5%;
 }
+
 
 /* Browse Services css */
 
@@ -482,6 +489,7 @@ input:focus, textarea:focus {
     cursor: pointer;
 }
 
+
 /* On Mobile Styling */
 @media screen and (max-width: 1000px){
     .card {
@@ -514,11 +522,13 @@ input:focus, textarea:focus {
 
 @media screen and (max-width: 750px){
     .menu-header {
+
         margin: 40px 0 1.5vw 0;
     }
 
     .menu-header h2 {
         margin: 0 0 0 2rem;
+
     }
 
     .content-img {
@@ -541,6 +551,13 @@ input:focus, textarea:focus {
     /*bottom: -6px;*/
 }
 
+.header-wave {
+    /*position: relative;*/
+    width: 100%;
+    margin-bottom: -6px;
+    /*bottom: -6px;*/
+}
+
 .footer {
     background-color: #CC9544;
     padding: 5px 0 50px 0;
@@ -553,6 +570,7 @@ input:focus, textarea:focus {
 .row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .row-centered {
@@ -658,3 +676,73 @@ input:focus, textarea:focus {
     }
 }
 
+/*Dropdown Style*/
+
+.accordion-item{
+    background-color: #361500;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
+}
+
+.accordion-link{
+    font-size: 1.6rem;
+    color: white;
+    text-decoration: none;
+    background-color: #361500;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.accordion-link i{
+    color: #E7D5FF;
+    padding: .5rem;
+}
+
+.accordion-link .ion-icon-remove{
+    display: none;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #361500;
+    transition: max-height 650ms;
+
+}
+
+.answer::before{
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background-color: white;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+}
+
+.answer p{
+    font-size: 1.4rem;
+    color: white;
+    padding: 2rem;
+}
+
+.accordion-item:target .answer{
+    max-height: 20rem;
+
+}
+
+.accordion-item:target .accordion-link .ion-icon-add{
+    display: none;
+}
+
+.accordion-item:target .accordion-link .ion-icon-remove{
+    display: block;
+}
