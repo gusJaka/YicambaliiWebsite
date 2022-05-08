@@ -548,6 +548,10 @@ li:hover .dropdown-list {
         width: 100%;
         padding: unset;
     }
+
+    .card {
+        width: 100%;
+    }
 }
 
 /*----------------------------------------------
