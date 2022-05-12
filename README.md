@@ -1,5 +1,7 @@
+# CSW202 Web Page Publishing
+  > Assignment 2
 # YicambaliiWebsite
-This is the repository for Yicambalii website application
+This is the repository for "Yicambalii" website application
 ## Team:
 - Dicky Adrianto (E1800163)
 - Ida Bagus Jatem Kamandalu (E1800168)
