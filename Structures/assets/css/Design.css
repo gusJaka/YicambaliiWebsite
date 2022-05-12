@@ -30,11 +30,13 @@
     height: 350px;
     width: 33%;
     margin: auto;
+    padding: 20px;
     justify-content: center;
     align-items: center;
 }
 
 .container-item-secondary {
+    padding: 20px;
     display: flex;
     background-color: #361500;
     height: 400px;
