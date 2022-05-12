@@ -271,7 +271,7 @@ li:hover .dropdown-list {
     color: #CC9544;
 }
 .menu-container .menu-header{
-    padding: 90px 20px 2vw 20px;
+    padding: 150px 20px 2vw 20px;
 }
 .menu-container .menu-body {
 
@@ -419,6 +419,12 @@ li:hover .dropdown-list {
     background-color: #CC9544;
 }
 
+.background-image {
+    background-image: url(../img/cropped.png);
+    background-size: 1600px 400px;
+    background-repeat: no-repeat;
+}
+
 .menu-header h2 {
     text-align: left;
     margin: 2rem 0 0 2rem;
@@ -432,10 +438,14 @@ li:hover .dropdown-list {
 
 .input-date-left {
     border-radius: 2rem 0 0 2rem;
+    border: unset;
+    border-right: darkgray 2px solid;
 }
 
 .input-date-right {
     border-radius: 0 2rem 2rem 0;
+    border: unset;
+    border-left: darkgray 2px solid;
 }
 
 .search-group {
@@ -473,6 +483,10 @@ li:hover .dropdown-list {
 .card:hover {
     box-shadow: 0 8px 16px 0 #361500;
     transition: all 0.3s ease-in-out;
+}
+
+.padding5{
+    padding: 5px;
 }
 
 .card-caption {
