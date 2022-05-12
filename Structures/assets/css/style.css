@@ -376,9 +376,8 @@ li:hover .dropdown-list {
     height: 201px;
 }
 
-.row button {
+.float-right {
     float: right;
-
 }
 
 /* Booking Guidance css */
