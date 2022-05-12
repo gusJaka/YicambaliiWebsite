@@ -22,5 +22,5 @@ function sendSuggestionMail() {
 
 function sendEmail()
 {
-    window.location = "mailto:kadek0086@gmail.com";
+    window.location = "mailto:kadek0086@gmail.com?subject=Yicambalii Order&body=Hello! I want to order Equipments/Services";
 }
