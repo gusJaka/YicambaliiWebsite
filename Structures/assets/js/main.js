@@ -32,12 +32,12 @@ var i = 0;
 function slide(){
     if(i > 2)
         i=0;
-    document.getElementById('cont'+(i%3)).innerHTML = "Lorem Ipsum Dolor Sit Amet";
-    document.getElementById('cont'+(i%3)).href = "TipsTricks.html";
+    document.getElementById('cont'+(i%3)).innerHTML = "Don't Touch Your Lens Glass";
+    document.getElementById('cont'+(i%3)).href = "Structures/TipsTricks.html";
     document.getElementById('cont'+((i+1)%3)).innerHTML = "Get a Good Camera Bag";
-    document.getElementById('cont'+((i+1)%3)).href = "TipsTricks.html#GGcb";
+    document.getElementById('cont'+((i+1)%3)).href = "Structures/TipsTricks.html#GGcb";
     document.getElementById('cont'+((i+2)%3)).innerHTML = "Take The Batteries Out";
-    document.getElementById('cont'+((i+2)%3)).href = "TipsTricks.html#TTbo";
+    document.getElementById('cont'+((i+2)%3)).href = "Structures/TipsTricks.html#TTbo";
     i++;
 }
 
